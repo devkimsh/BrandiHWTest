@@ -19,7 +19,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 const val BASE_URL = "https://dapi.kakao.com/"
 
-class RetrofitRepository(val m_Context: Context) {
+class RetrofitRepository() {
     private var m_retrofit: Retrofit
     private var m_retrofitServiceAPI: IRetrofitAPI
 

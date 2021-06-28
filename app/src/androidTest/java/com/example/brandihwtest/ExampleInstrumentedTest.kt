@@ -33,7 +33,7 @@ class ExampleInstrumentedTest {
     {
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
 
-        val retrofitRepository = RetrofitRepository(appContext)
+        val retrofitRepository = RetrofitRepository()
         retrofitRepository.getImageLists("축구")
     }
 
@@ -45,7 +45,7 @@ class ExampleInstrumentedTest {
     {
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
 
-        val retrofitRepository = RetrofitRepository(appContext)
+        val retrofitRepository = RetrofitRepository()
         retrofitRepository.addImageLists("축구", 2)
     }
 }
